@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170922234801) do
+ActiveRecord::Schema.define(version: 20180604022310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20170922234801) do
     t.bigint "category_id"
     t.bigint "job_poster_id"
     t.integer "status", default: 0, null: false
-    t.text "description"
+    t.text "description", default: "", null: false
     t.datetime "posted_at", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
