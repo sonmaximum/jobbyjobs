@@ -25,11 +25,11 @@ Submit the results of your three completed tasks as a Pull Request for the team 
 
 ## Required Task
 
-101. Associate locations in the system with a region so that JobbyJobs can easily segment job postings across a state. Modify the system so that when creating a location, you can specify the region the location is associated with, and show the name of that region on the location's show page. While it's not needed anywhere in the application, ensure it's easy to group all locations by region.
+✓  ~~101. Associate locations in the system with a region so that JobbyJobs can easily segment job postings across a state. Modify the system so that when creating a location, you can specify the region the location is associated with, and show the name of that region on the location's show page. While it's not needed anywhere in the application, ensure it's easy to group all locations by~~ region.
 
 ## Available Tasks
 
-201. When creating a new job posting, require the description to be set before saving.
+✓  ~~201. When creating a new job posting, require the description to be set before saving.~~
 202. Re-implement the front-end for viewing all jobs and creating a new job using a JS framework like React, Vue, Elm, or Angular.
 203. Job searchers are looking to view jobs on their phone, and the current UI is lacking in supporting that. Update the UI for mobile display on the job posting index page. Focus only on this page.
 204. New jobs are of particular interest to the client. Generate a CSV report for their consumption that lists all new jobs in the system. A new job is defined as any job that was created yesterday. This report should be generated automatically every day at 9am Eastern Time.
@@ -49,9 +49,9 @@ Submit the results of your three completed tasks as a Pull Request for the team 
 
 Install:
 
-* [pkg-config](https://freedesktop.org/wiki/Software/pkg-config/)
-* [CMake](https://cmake.org/)
-* [Chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+  * [pkg-config](https://freedesktop.org/wiki/Software/pkg-config/)
+  * [CMake](https://cmake.org/)
+  * [Chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
 You can install these on OS X with [homebrew](https://brew.sh/) by running:
 
