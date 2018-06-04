@@ -6,6 +6,6 @@ class LocationSerializer < ActiveModel::Serializer
     :street_address_2,
     :city,
     :state,
-    :zip_code
+    :zip_code,
   )
 end

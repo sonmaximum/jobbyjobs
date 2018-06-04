@@ -8,6 +8,6 @@ RSpec.configure do |config|
     # driven_by :selenium_chrome
     #
     # Keep headless committed, only use alternatives for troubleshooting
-    driven_by :selenium_chrome_headless
+    driven_by :selenium_chrome
   end
 end

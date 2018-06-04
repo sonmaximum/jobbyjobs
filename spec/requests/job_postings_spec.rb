@@ -25,8 +25,8 @@ RSpec.describe "Job Postings", type: :request do
           "description" => "Must be willing to work on short notice",
           "location" => a_hash_including("city" => "Boston"),
           "category" => a_hash_including("name" => "Hockey"),
-          "status" => "New Post"
-        )
+          "status" => "New Post",
+        ),
       )
     end
   end
@@ -44,7 +44,7 @@ RSpec.describe "Job Postings", type: :request do
           category_id: category.id,
           location_id: location.id,
           status: "pending",
-          description: "Quick skater focused on making the first pass out of the zone."
+          description: "Quick skater focused on making the first pass out of the zone.",
         }
 
         post api_v1_job_postings_path, params: { job_posting: posting_params }
@@ -59,7 +59,7 @@ RSpec.describe "Job Postings", type: :request do
           "description" => "Quick skater focused on making the first pass out of the zone.",
           "category" => a_hash_including("id" => category.id),
           "location" => a_hash_including("id" => location.id),
-          "job_poster" => a_hash_including("id" => poster.id)
+          "job_poster" => a_hash_including("id" => poster.id),
         )
       end
     end
@@ -73,7 +73,7 @@ RSpec.describe "Job Postings", type: :request do
         expect(JobPosting.count).to eq 0
         expect(response).to have_http_status(:unprocessable_entity)
         expect(json_response).to include(
-          "title" => ["can't be blank"]
+          "title" => ["can't be blank"],
         )
       end
     end

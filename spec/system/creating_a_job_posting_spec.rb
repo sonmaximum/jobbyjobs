@@ -23,7 +23,7 @@ RSpec.describe "Creating a job posting", type: :system do
       poster: job_poster.full_name,
       category: category.name,
       location: location.name,
-      description: job_posting.description
+      description: job_posting.description,
     )
     create_page.submit
 
@@ -32,7 +32,7 @@ RSpec.describe "Creating a job posting", type: :system do
       job_poster: job_poster,
       category: category,
       location: location,
-      description: job_posting.description
+      description: job_posting.description,
     )
 
     expect(create_page).to have_created_posting submitted_job

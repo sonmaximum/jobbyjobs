@@ -23,8 +23,8 @@ RSpec.describe "Locations", type: :request do
           "street_address_2" => location.street_address_2,
           "city" => location.city,
           "state" => location.state,
-          "zip_code" => location.zip_code
-        )
+          "zip_code" => location.zip_code,
+        ),
       )
     end
   end

@@ -12,8 +12,8 @@ RSpec.describe "Job Posters", type: :request do
       expect(json_response).to contain_exactly(
         a_hash_including(
           "id" => job_poster.id,
-          "full_name" => "Anders Bjork"
-        )
+          "full_name" => "Anders Bjork",
+        ),
       )
     end
   end

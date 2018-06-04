@@ -27,9 +27,9 @@ RSpec.describe "Creating a location", type: :system do
         street_address_2: location.street_address_2,
         city: location.city,
         state: location.state,
-        zip_code: location.zip_code
+        zip_code: location.zip_code,
       },
-      name: location.name
+      name: location.name,
     )
     create_page.submit
 
@@ -39,7 +39,7 @@ RSpec.describe "Creating a location", type: :system do
       street_address_2: location.street_address_2,
       city: location.city,
       state: location.state,
-      zip_code: location.zip_code
+      zip_code: location.zip_code,
     )
 
     expect(create_page).to have_created_location submitted_location

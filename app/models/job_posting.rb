@@ -6,7 +6,7 @@ class JobPosting < ApplicationRecord
   enum status: {
     new_post: 0,
     pending: 1,
-    complete: 2
+    complete: 2,
   }
 
   validates :title, presence: true

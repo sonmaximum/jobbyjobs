@@ -12,8 +12,8 @@ RSpec.describe "Categories", type: :request do
       expect(json_response).to contain_exactly(
         a_hash_including(
           "id" => category.id,
-          "name" => "Some Category"
-        )
+          "name" => "Some Category",
+        ),
       )
     end
   end

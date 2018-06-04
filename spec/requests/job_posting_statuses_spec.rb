@@ -11,17 +11,17 @@ RSpec.describe "JobPostingStatuses", type: :request do
         [
           {
             "name" => "New Post",
-            "value" => "new_post"
+            "value" => "new_post",
           },
           {
             "name" => "Pending",
-            "value" => "pending"
+            "value" => "pending",
           },
           {
             "name" => "Complete",
-            "value" => "complete"
-          }
-        ]
+            "value" => "complete",
+          },
+        ],
       )
     end
   end

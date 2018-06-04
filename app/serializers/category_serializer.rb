@@ -1,7 +1,7 @@
 class CategorySerializer < ActiveModel::Serializer
   attributes(
     :id,
-    :name
+    :name,
   )
 
   def name

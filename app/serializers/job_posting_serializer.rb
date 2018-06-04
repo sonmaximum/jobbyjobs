@@ -4,7 +4,7 @@ class JobPostingSerializer < ActiveModel::Serializer
     :title,
     :status,
     :description,
-    :posted_at
+    :posted_at,
   )
 
   has_one :category
