@@ -39,7 +39,7 @@ Submit the results of your three completed tasks as a Pull Request for the team 
 
 206.Allow users to easily find jobs posted by a particular person by implementing a search feature, that will find all jobs posted by the user searched for, either by first name or last name.  
 207.Report at the top of the index page, above the listing of jobs, how many pending jobs there are in each category.
-208.When viewing the details of a particular job, use the location to generate a map which clearly shows where the posting is for.  
+✓  ~~208.When viewing the details of a particular job, use the location to generate a map which clearly shows where the posting is for.~~  
 209.On the form to create a location, use Google Places or another API to validate and auto-complete the address as it is being typed.  
 210.Implement an authentication system using something like Devise or JWT and use it to ensure that users must log in before creating or editing a job posting.  
 211.When viewing the details of a particular job, link to other nearby jobs as well. A "nearby" job may be one that's in the same city, or any other heuristic of your choosing.  
