@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: "job_postings#index"
 
+  resources :regions
   resources :job_postings, only: [:create, :edit, :index, :new, :show, :update]
   resources :locations, only: [:create, :new, :show]
 
