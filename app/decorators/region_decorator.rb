@@ -9,4 +9,7 @@ class RegionDecorator < Draper::Decorator
   #       object.created_at.strftime("%a %m/%d/%y")
   #     end
   #   end
+  def region_name
+    object.name.titleize
+  end
 end

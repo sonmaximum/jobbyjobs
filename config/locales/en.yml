@@ -2,6 +2,7 @@ en:
   locations:
     form:
       create: Add Location
+      region_prompt: Select Region
     location_heading:
       title: Location
     show:

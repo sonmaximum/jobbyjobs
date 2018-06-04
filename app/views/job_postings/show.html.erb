@@ -12,10 +12,14 @@
     <dd class="posting-category"><%= @job_posting.category_name %></dd>
     <dt><%= t(".location") %></dt>
     <dd class="posting-location"><%= simple_format(@job_posting.location_full_address) %></dd>
+    <dt><%= t(".region") %></dt>
+    <dd class="location-region"><%= simple_format(@job_posting.location.region_name) %></dd>
     <dt><%= t(".status") %></dt>
     <dd class="posting-status"><%= @job_posting.status %></dd>
     <dt><%= t(".description") %></dt>
     <dd class="posting-description"><%= @job_posting.description %></dd>
+    <iframe class="map-container" frameborder="0" style="border:0"   width="400" height="300" frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCdj8QjMVvGFazGfgbbP1E0mtAAS1FtCyk&q=<%= @job_posting.location_full_address%>" allowfullscreen></iframe>
   </dl>
 </div>
 

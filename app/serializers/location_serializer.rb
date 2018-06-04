@@ -8,4 +8,6 @@ class LocationSerializer < ActiveModel::Serializer
     :state,
     :zip_code,
   )
+
+  has_one :region
 end
